@@ -15,6 +15,13 @@ var count2 = 0;
 var count3 = 0;
 
 function doit(){
+    
+    if(document.getElementById("save-btn").value == ""){
+        
+        alert("Empty field not allowed");
+    }
+    
+    else {
 
     const parentDiv = document.createElement("div");
     const textDiv = document.createElement("div");
@@ -113,6 +120,8 @@ function doit(){
     document.getElementById("input-box").value = "";
     count++;
     count2++;
+        
+    }
 }
 
 
