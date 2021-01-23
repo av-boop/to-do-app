@@ -16,12 +16,9 @@ var count3 = 0;
 
 function doit(){
     
-    if(document.getElementById("save-btn").value == ""){
-        
-        alert("Empty field not allowed");
-    }
     
-    else {
+    
+    
 
     const parentDiv = document.createElement("div");
     const textDiv = document.createElement("div");
@@ -121,7 +118,7 @@ function doit(){
     count++;
     count2++;
         
-    }
+    
 }
 
 
