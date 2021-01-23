@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  width: 500px;
+  height: 140px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-container {
+  width: 100%;
+  height: 70px;
+}
+#input-box {
+  width: 100%;
+  height: 70px;
+  background-color: #374045;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: large;
+  padding: 5px;
+}
+
+.btn-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+.div1 {
+  width: 60%;
+}
+#div2 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+#cancel-btn {
+  width: 60px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 165, 0, 0.8);
+
+  margin-top: 15px;
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+#cancel-btn:hover {
+  background-color: rgba(255, 165, 0, 1);
+  font-weight: 700;
+}
+
+#save-btn {
+  width: 60px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(3, 197, 3, 0.8);
+
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#save-btn2 {
+  width: 60px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(3, 197, 3, 0.8);
+
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#save-btn:hover {
+  background-color: rgba(3, 197, 3, 1);
+  font-weight: 700;
+}
+
+#list-items {
+  width: 500px;
+  height: 400px;
+
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.parent {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5px solid #00af91;
+  box-shadow: 4px 4px 4px 4px #888888;
+  border: 1px solid red;
+}
+
+.list {
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 600;
+
+  word-wrap: break-word;
+}
+
+.btn-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.time-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 5px;
+  font-size: 15px;
+  color: black;
+}
+
+.delete-btn {
+  width: 60px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: rgba(250, 87, 58, 0.8);
+  font-weight: bolder;
+}
+
+.done-btn {
+  height: 30px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  width: 60px;
+  background-color: rgba(4, 196, 4, 0.8);
+  font-weight: bolder;
+}
+
+.delete-btn:hover {
+  background-color: rgba(250, 87, 58, 1);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.done-btn:hover {
+  background-color: rgba(4, 196, 4, 1);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.edit-btn:hover {
+  background-color: rgba(255, 165, 0, 1);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details-div {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+@media (max-width: 510px) {
+  .main {
+    width: 90%;
+    height: 140px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #list-items {
+    width: 90%;
+    height: 400px;
+
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  #cancel-btn {
+    width: 60px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 165, 0, 0.8);
+    position: relative;
+    left: 50%;
+    margin-top: 15px;
+
+    font-size: 15px;
+  }
+
+  #save-btn {
+    width: 60px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(3, 197, 3, 0.8);
+    position: relative;
+    left: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .list {
+    width: 82%;
+
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    overflow-y: auto;
+    word-wrap: break-word;
+  }
+
+
+  .btn-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .div1 {
+    width: 38%;
+  }
+  .div2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #cancel-btn:hover {
+    background-color: rgba(255, 165, 0, 1);
+    font-weight: normal;
+  }
+
+  #save-btn:hover {
+    background-color: rgba(3, 197, 3, 1);
+    font-weight: normal;
+  }
+
+  .delete-btn:hover {
+    background-color: rgba(250, 87, 58, 1);
+    font-weight: normal;
+  }
+
+  .done-btn:hover {
+    background-color: rgba(4, 196, 4, 1);
+    font-weight: normal;
+  }
+
+  
+}
+
+
+@media(max-width:426px){
+
+  * .time-div {
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    line-height: 1.2rem;
+  } 
+
+
+
+  
+   .btn-div {
+    width: 150px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+  } 
+}
+
+@media(min-width:350px){
+
+  .btn-div {
+    width: 150px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 40px;
+  } 
+
+
+}
+
+@media(min-width:385px){
+
+  .btn-div {
+    width: 150px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 60px;
+  } 
+}
+
+
