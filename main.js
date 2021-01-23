@@ -17,9 +17,6 @@ var count3 = 0;
 function doit(){
     
     
-    
-    
-
     const parentDiv = document.createElement("div");
     const textDiv = document.createElement("div");
     const btnDiv = document.createElement("div");
